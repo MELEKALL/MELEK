@@ -1,0 +1,274 @@
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.animated-text {
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    font-size: 2em;
+    animation: typing 5s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    width: 100%;
+    align-items: center;
+    padding: 10px 20px; /* Réduit le padding pour les petits écrans */
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    padding-left: 30px;
+    color: #3a6cf4;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.navigation a:hover {
+    color: #530df5;
+}
+
+section {
+    padding: 100px 20px; /* Réduit le padding pour les petits écrans */
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background: url(a2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    color: #4eff51;
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.187em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #1c57f9;
+    transform: scale(1.1);
+}
+
+.social-icon a {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.About-me {
+    height: 650px;
+}
+
+.title {
+    text-align: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.d1 {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto; /* Centre le contenu */
+    font-weight: 700;
+    padding: 52px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    border-radius: 10px;
+}
+
+.d2 {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #4eff51;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    font-size: 2em;
+    animation: typing 5s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+.img {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 250px; /* Limite la taille maximale de l'image */
+    margin: 10px auto; /* Centre l'image et ajoute un espacement vertical */
+    border-radius: 5px;
+}
+
+.Skills {
+    background-color: #1c1331;
+}
+
+.contact {
+    height: 600px;
+}
+
+.progress {
+    height: 15px;
+    margin: 10px;
+}
+
+.pg {
+    display: inline-block;
+    float: right;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: rgb(0, 170, 255);
+}
+
+.progress-bar {
+    color: black;
+    font-weight: 700;
+}
+
+.icon {
+    color: #3a6cf4;
+    text-align: center;
+    font-size: 5.5em;
+}
+
+.card {
+    background-color: #fff;
+    width: 21em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px auto; /* Centre les cartes */
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+
+.footer {
+    background-color: #1c1331;
+    height: 110px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.span {
+    color: #3a6cf4;
+    font-weight: 800;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Flex properties for responsive design */
+.main .main-content .About-me .about-content .Skills .skills-content .Contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 998px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 10px 10px; /* Réduit le padding pour les petits écrans */
+    }
+
+    .navigation a {
+        padding-left: 15px; /* Réduit l'espacement des liens */
+        font-size: 1em; /* Réduit la taille de la police */
+    }
+
+    section {
+        padding: 50px 10px; /* Réduit le padding pour les petits écrans */
+    }
+
+    .main h2 {
+        font-size: 1.2em; /* Réduit la taille de la police */
+    }
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .main h2 {
+        font-size: 1.5em; /* Réduit la taille de la police pour les petits écrans */
+    }
+
+    .main-btn {
+        font-size: 1em; /* Réduit la taille de la police du bouton */
+        padding: 0.7em 1.5em; /* Ajuste le padding */
+    }
+}
